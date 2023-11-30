@@ -19,7 +19,6 @@ const FormPersonal = ({ onFormSubmit, initialData }) => {
     return (
         <>
         <form onSubmit={handleSubmit}>
-                {/* We can iterate over the formData keys to create form fields dynamically */}
                 {Object.keys(formData).map((key) => (
                     <label key={key}>
                         <input
