@@ -1,12 +1,11 @@
 import './App.css'
-import ManagePersonal from "./components/PersonalInformation/ManagePersonal.jsx";
-
+import ManageSubmit from "./components/ManageSubmit.jsx";
 
 const App = () => {
     return (
         <>
         <h1> Test </h1>
-        <ManagePersonal />
+        <ManageSubmit />
         </>
     )
 }
