@@ -4,7 +4,7 @@ const PersonalDetailsView = ({ details }) => {
     return (
         <div>
             {Object.entries(details).map(([key, value]) => (
-                key !== 'id' && <p key={key}>{`${key}: ${value}`}</p>
+                key !== 'id' && <p key={key}>{`${value}`}</p>
             ))}
         </div>
     );
