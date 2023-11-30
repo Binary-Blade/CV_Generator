@@ -1,11 +1,10 @@
 import './App.css'
-import ManageSubmit from "./components/ManageSubmit.jsx";
+import Dashboard from "./components/Dashboard.jsx";
 
 const App = () => {
     return (
         <>
-        <h1> Test </h1>
-        <ManageSubmit />
+        <Dashboard />
         </>
     )
 }
