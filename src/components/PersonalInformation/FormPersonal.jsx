@@ -17,7 +17,6 @@ const FormPersonal = ({ onFormSubmit, initialData }) => {
         onFormSubmit(formData);
     };
     return (
-        <>
         <form onSubmit={handleSubmit}>
                 {Object.keys(formData).map((key) => (
                     <label key={key}>
@@ -33,7 +32,7 @@ const FormPersonal = ({ onFormSubmit, initialData }) => {
                 ))}
                 <button type="submit">Submit</button>
         </form>
-        </>
+
     )
 
 }
