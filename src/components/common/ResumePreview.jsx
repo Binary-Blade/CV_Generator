@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const PersonalDetailsView = ({ details }) => {
+const ResumePreview = ({ details }) => {
     return (
         <div>
             {Object.entries(details).map(([key, value]) => (
@@ -10,8 +10,8 @@ const PersonalDetailsView = ({ details }) => {
     );
 };
 
-PersonalDetailsView.propTypes = {
+ResumePreview.propTypes = {
     details: PropTypes.object.isRequired
 };
 
-export default PersonalDetailsView;
+export default ResumePreview;
