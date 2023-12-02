@@ -4,7 +4,7 @@ const Resume = ({preview}) => {
     return (
         <>
         <h1>Preview</h1>
-    <div>{preview}</div>
+         <div>{preview}</div>
         </>
     )
 }
