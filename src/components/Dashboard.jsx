@@ -26,21 +26,25 @@ const Dashboard = () => {
 
     return (
         <>
-            <h1>Dashboard</h1>
-                <div>
-                    <FormPersonal onInfoUpdate={handlePersonalInfoUpdate}/>
-                    <FormProfessional onInfoUpdate={handleProfessionalInfoUpdate}/>
+
+            <div className="flex flex-col md:flex-row gap-6 p-6">
+                <div className="flex-2 bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h1 className="text-center text-3xl font-bold text-gray-700 mb-8">Dashboard</h1>
+                    <FormPersonal onInfoUpdate={handlePersonalInfoUpdate} />
+                    <FormProfessional onInfoUpdate={handleProfessionalInfoUpdate} />
                     <FormEducation onInfoUpdate={handleEducationInfoUpdate} />
                 </div>
-            <div>
-                <Resume preview={
-                    <>
-                        <ResumePreview details={personalInfo} />
-                        <ResumePreview details={professionalInfo} />
-                        <ResumePreview details={educationInfo} />
-                    </>
-                } />
+                <div className="flex-1">
+                    <Resume preview={
+                        <>
+                            <ResumePreview title="Personal Information" details={personalInfo} />
+                            <ResumePreview title="Professional Information" details={professionalInfo} />
+                            <ResumePreview title="Educational Information" details={educationInfo} />
+                        </>
+                    } />
+                </div>
             </div>
+
 
         </>
     );
