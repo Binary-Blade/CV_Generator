@@ -22,8 +22,8 @@ const FormPersonal = ({ onInfoUpdate }) => {
 
     return (
         <>
-            <h2>General Information</h2>
-            <form onSubmit={handleSubmit}>
+            <h2 className="text-center text-xl font-bold text-gray-700 mt-4">General Information</h2>
+            <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white shadow-md rounded">
                 <Form formData={personalData} onChange={handleChange}/>
             </form>
         </>
