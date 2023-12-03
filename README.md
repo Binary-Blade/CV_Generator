@@ -20,8 +20,3 @@ This project is a simple yet functional Resume Generator built using React and T
 
 - **Preview Customization**: Currently, the CV preview section lacks detailed customization options. It displays the information in a basic format.
 - **State Management**: The project is designed to demonstrate the use of `useState` hook, hence advanced state management patterns or tools like Redux or Context API are not implemented.
-
-
----
-
-Ce `README` donne une vue d'ensemble claire du projet, ses fonctionnalités, les technologies utilisées, et comment l'installer et le démarrer. Il ouvre également la porte aux contributions, ce qui est une pratique courante pour les projets open-source.
