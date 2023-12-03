@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
 
-const ResumePreview = ({ details }) => {
+const ResumePreview = ({ title, details }) => {
     return (
-        <div>
+        <div className="bg-white p-4 shadow rounded mt-6">
+            <h2 className="text-xl font-semibold mb-4">{title}</h2>
             {Object.entries(details).map(([key, value]) => (
-                key !== 'id' && <p key={key}>{`${value}`}</p>
+                <p key={key} className="mb-2"><span className="font-semibold capitalize">{key}:</span> {value}</p>
             ))}
         </div>
     );
 };
 
 ResumePreview.propTypes = {
+    title: PropTypes.string.isRequired,
     details: PropTypes.object.isRequired
 };
 
